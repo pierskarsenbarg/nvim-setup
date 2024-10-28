@@ -1,10 +1,10 @@
 require("lazy").setup({
     spec = { -- import your plugins
         {
-            "folke/tokyonight.nvim",
+            "dracula/vim",
             priority = 1000,
             init = function()
-                vim.cmd.colorscheme 'tokyonight-night'
+                vim.cmd.colorscheme 'dracula'
                 vim.cmd.hi 'Comment gui=none'
             end
         },
@@ -16,6 +16,8 @@ require("lazy").setup({
         {
             'nvim-neo-tree/neo-tree.nvim',
             version = '*',
+            lazy=false,
+            priority=100,
             dependencies = {'nvim-lua/plenary.nvim', 'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
                             'MunifTanjim/nui.nvim'},
             cmd = 'Neotree',

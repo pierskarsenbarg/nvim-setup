@@ -39,7 +39,6 @@ return {
 				"gopls",
 				"docker_compose_language_service",
 				"dockerls",
-				"omnisharp",
 			},
 		})
 

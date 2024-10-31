@@ -39,6 +39,7 @@ return {
 				"gopls",
 				"docker_compose_language_service",
 				"dockerls",
+				"astro",
 			},
 		})
 
@@ -49,7 +50,7 @@ return {
 				"isort", -- python formatter
 				"black", -- python formatter
 				"gofumpt", -- golang formatter
-				"pylint", -- python linter
+				"flake8", -- python linter
 				"eslint_d", -- js linter"
 				"golangci-lint", -- golang linter
 			},

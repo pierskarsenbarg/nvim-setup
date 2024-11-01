@@ -36,10 +36,10 @@ return {
 				"emmet_ls",
 				"prismals",
 				"pyright",
-				"gopls",
 				"docker_compose_language_service",
 				"dockerls",
 				"astro",
+				"gopls",
 			},
 		})
 
@@ -49,10 +49,8 @@ return {
 				"stylua", -- lua formatter
 				"isort", -- python formatter
 				"black", -- python formatter
-				"gofumpt", -- golang formatter
 				"flake8", -- python linter
 				"eslint_d", -- js linter"
-				"golangci-lint", -- golang linter
 			},
 		})
 	end,

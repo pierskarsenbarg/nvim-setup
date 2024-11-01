@@ -103,19 +103,19 @@ return {
 			["pyright"] = function()
 				lspconfig["pyright"].setup({
 					filetypes = {
-						"python"
+						"python",
 					},
 					capabilities = capabilities,
-					cmd = { 'pyright-langserver', '--stdio' },
+					cmd = { "pyright-langserver", "--stdio" },
 					settings = {
 						python = {
-						  analysis = {
-							autoSearchPaths = true,
-							useLibraryCodeForTypes = true,
-							diagnosticMode = 'openFilesOnly',
-						  },
+							analysis = {
+								autoSearchPaths = true,
+								useLibraryCodeForTypes = true,
+								diagnosticMode = "openFilesOnly",
+							},
 						},
-					  }
+					},
 				})
 			end,
 			["graphql"] = function()

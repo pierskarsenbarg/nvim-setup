@@ -35,7 +35,6 @@ return {
 				"graphql",
 				"emmet_ls",
 				"prismals",
-				"pyright",
 				"docker_compose_language_service",
 				"dockerls",
 				"astro",

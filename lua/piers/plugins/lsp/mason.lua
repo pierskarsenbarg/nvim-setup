@@ -29,6 +29,7 @@ return {
 				"ts_ls",
 				"html",
 				"cssls",
+				"omnisharp",
 				"tailwindcss",
 				"svelte",
 				"lua_ls",
@@ -39,6 +40,16 @@ return {
 				"dockerls",
 				"astro",
 				"gopls",
+				-- "pyright",
+				"ruff",
+				
+			},
+			handlers = {
+				-- this first function is the "default handler"
+				-- it applies to every language server without a "custom handler"
+				function(server_name)
+					require("lspconfig")[server_name].setup({})
+				end,
 			},
 		})
 
@@ -46,10 +57,11 @@ return {
 			ensure_installed = {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
-				"isort", -- python formatter
 				"black", -- python formatter
 				"flake8", -- python linter
-				"eslint_d", -- js linter"
+				"eslint_d", -- js linter
+				"golangci-lint",
+				"gofumpt",
 			},
 		})
 	end,

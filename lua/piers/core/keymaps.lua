@@ -37,3 +37,6 @@ keymap.set("n", "<Down>", "<Nop>", opts)
 keymap.set("n", "<Left>", "<Nop>", opts)
 keymap.set("n", "<Right>", "<Nop>", opts)
 
+keymap.set("n", "<leader>/", "gcc", { desc = "toggle comment", remap = true })
+keymap.set("v", "<leader>/", "gc", { desc = "toggle comment", remap = true })
+keymap.set("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "nvimtree focus window" })

@@ -22,15 +22,15 @@ return {
 				python = { "isort", "black" },
 				go = { "gofmt" },
 			},
-			format_on_save = {
-				lsp_fallback = true,
-				async = false,
-				timeout_ms = 3000,
-			},
+			-- format_on_save = {
+			-- 	lsp_fallback = true,
+			-- 	async = false,
+			-- 	timeout_ms = 3000,
+			-- },
 			formatters = {
 				prettier = {
 					prepend_args = function()
-						return { "--tab-width", "4" }
+						return { "--tab-width", "4", "--print-width", 120 }
 					end,
 				},
 			},

@@ -47,7 +47,7 @@ return {
 				"stylua", -- lua formatter
 				"black", -- python formatter
 				"flake8", -- python linter
-				"eslint_d", -- js linter
+				{'eslint_d', version = '13.1.2'}, -- js linter
 				"golangci-lint",
 				"gofumpt",
 			},
